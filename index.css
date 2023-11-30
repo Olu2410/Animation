@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(231, 176, 176);
+    animation: move 4s infinite;
+    position: relative;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+}
+span{
+    text-decoration: underline;
+}
+.ball{
+    background-color: aqua;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    position: absolute;
+    animation: bounce 1s infinite;
+}
+.floor{
+    background-color: rgb(157, 130, 130);
+    position: absolute;
+    height: 10rem;
+    width: 100vw;
+    top: 28rem;
+}
+@keyframes bounce {
+    0% {
+        top: 19rem; left: 0%;
+    }
+    10% {
+        top: 23rem; left: 10%;
+    }
+    20% {
+        top:19rem; left: 20%;
+    }
+    30% {
+        top: 23rem; left: 30%;
+    }
+    40% {
+        top: 19rem; left: 40%;
+    }
+    50% {
+        top: 23rem; left: 50%;
+    }
+    60% {
+        top: 19rem; left: 60%;
+    }
+    70% {
+        top: 23rem; left: 70%;
+    }
+    80% {
+        top: 19rem; left: 80%;
+    }
+    90% {
+        top: 23rem; left: 90%;
+    }
+    100% {
+        top: 19rem; left: 100%;
+    }
+}
+@keyframes move {
+    0% {
+        background-color: rgb(231, 176, 176);
+    }
+    25% {
+        background-color: rgb(94, 94, 158);
+    }
+    50% {
+        background-color: whitesmoke;
+    }
+    100% {
+        background-color: brown;
+    }
+}
